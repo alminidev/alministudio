@@ -45,3 +45,4 @@
 ## 3. Oportunidades de Otimização em UX
 * **Webmail Fallback no Contato:** O CTA principal dispara `mailto:`. Para usuários que não têm cliente padrão configurado (usam Gmail ou Outlook direto no navegador), exibir o e-mail em texto puro copiável (`hello@alexandrepolettini.com`) evita atrito de contato.
 * **Indicador de Progresso de Leitura:** Em landing pages de narrativa contínua, uma linha milimétrica sutil no topo do header indicando o scroll é um recurso útil que harmoniza com a identidade instrumental.
+

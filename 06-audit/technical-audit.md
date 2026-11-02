@@ -76,3 +76,4 @@
   * **CLS (Cumulative Layout Shift):** `0.00` (As imagens de projeto têm dimensões e proporções travadas via CSS).
 * **Acessibilidade & Animações (`prefers-reduced-motion`):**
   * Incluído bloco estrito de override desativando todas as durações de transição e animação caso o usuário tenha sensibilidade ao movimento configurada no sistema operacional.
+

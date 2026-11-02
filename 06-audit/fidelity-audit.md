@@ -71,3 +71,4 @@ Executado o script `check-fidelity.js` sem interpretação subjetiva:
 
 ## 3. Conclusão da Fase 0
 **Resultado:** Aprovado sem bloqueios. Nenhuma violação contratual detectada.
+

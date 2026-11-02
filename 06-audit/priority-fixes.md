@@ -32,11 +32,15 @@
 ---
 
 ### P1 — Importantes (Recomendados para o `/polish`)
-1. **Calibração de Contraste no Microtexto:**
+1. **Inclusão do WhatsApp Direto no Contato:**
+   * *Status:* **CONCLUÍDO**.
+   * *Onde:* Seção `#contact` e Rodapé (`.footer`).
+   * *Implementação:* Canal direto `WHATSAPP: +55 11 98930-7575` com link `https://wa.me/5511989307575` e mensagem de abertura contextual em ambos os idiomas.
+2. **Calibração de Contraste no Microtexto:**
    * *Onde:* `.hero-micro`, `.contact-micro`, `.drawer-idx`.
    * *Diagnóstico:* Cor `#636363` tem contraste de ~3.5:1 sobre o fundo preto.
    * *Ação sugerida:* Elevar para `#8a8a8a` para atingir 4.5:1 (WCAG AA).
-2. **Exibição Textual do E-mail no Contato:**
+3. **Exibição Textual do E-mail no Contato:**
    * *Onde:* Seção `#contact`.
    * *Diagnóstico:* O botão `{ VAMOS INICIAR UM PROJETO? ENTRE EM CONTATO }` dispara `mailto:`. Usuários de webmail (Gmail/Outlook no navegador) se beneficiam de ver o e-mail em texto puro copiável.
    * *Ação sugerida:* Adicionar linha sutil com o e-mail textual (`hello@alexandrepolettini.com`) logo abaixo da ação.
@@ -61,3 +65,4 @@
    * Gerar e apontar `favicon.svg` com o monograma `{A}` para a aba do navegador.
 2. **Vídeo/Animação no Case 03:**
    * Substituir o canvas escuro autoral por um MP4 em loop ou micro-interação interativa.
+

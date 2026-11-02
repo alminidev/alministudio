@@ -1,91 +1,102 @@
-// Mobile Menu Toggle
-const menuToggle = document.getElementById('menuToggle');
-const navLinks = document.getElementById('navLinks');
+/**
+ * ALMINI STUDIO by ALEXANDRE POLETTINI
+ * Interações de UI, Menu Drawer, Idioma e Smooth Scroll
+ */
 
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Menu Drawer (Cockpit Navigation)
+  const menuBtn = document.getElementById('alminiMenuBtn');
+  const navDrawer = document.getElementById('alminiNavDrawer');
 
-  // Close menu when a link is clicked
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
+  if (menuBtn && navDrawer) {
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', !isExpanded);
+      navDrawer.classList.toggle('active');
+    });
+
+    // Fechar ao clicar fora
+    document.addEventListener('click', (e) => {
+      if (!navDrawer.contains(e.target) && !menuBtn.contains(e.target)) {
+        navDrawer.classList.remove('active');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Fechar ao pressionar ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navDrawer.classList.contains('active')) {
+        navDrawer.classList.remove('active');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Fechar ao clicar em qualquer link do drawer
+    navDrawer.querySelectorAll('.drawer-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navDrawer.classList.remove('active');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  // 2. Persistência de Idioma
+  const langLinks = document.querySelectorAll('.lang-link');
+  langLinks.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selectedLang = btn.getAttribute('data-lang');
+      if (selectedLang) {
+        localStorage.setItem('almini_lang', selectedLang);
+      }
     });
   });
-}
 
-// Intersection Observer for fade-in animations
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
-    }
+  // 3. Smooth Scroll com Offset do Header Fixo
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#' || !targetId) return;
+      const targetElem = document.querySelector(targetId);
+      if (targetElem) {
+        e.preventDefault();
+        const headerHeight = 76;
+        const targetPos = targetElem.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+        window.scrollTo({
+          top: targetPos,
+          behavior: 'smooth'
+        });
+      }
+    });
   });
-}, observerOptions);
 
-// Observe project cards and sections
-const projectCards = document.querySelectorAll('.project');
-const aboutSection = document.querySelector('.about-content');
+  // 4. Scroll Reveal Interativo (Estilo Amplify / Webflow IX2)
+  const initScrollReveal = () => {
+    const revealElements = document.querySelectorAll('.reveal, .reveal-image');
+    if (!revealElements.length) return;
 
-projectCards.forEach(card => {
-  card.style.opacity = '0';
-  card.style.transform = 'translateY(20px)';
-  card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-  observer.observe(card);
-});
+    if (!('IntersectionObserver' in window)) {
+      revealElements.forEach(el => el.classList.add('is-revealed'));
+      return;
+    }
 
-if (aboutSection) {
-  aboutSection.style.opacity = '0';
-  aboutSection.style.transform = 'translateY(20px)';
-  aboutSection.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-  observer.observe(aboutSection);
-}
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -40px 0px',
+      threshold: 0.1
+    };
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const href = this.getAttribute('href');
-    if (href !== '#' && document.querySelector(href)) {
-      e.preventDefault();
-      const target = document.querySelector(href);
-      const headerHeight = document.querySelector('.header').offsetHeight;
-      const targetPosition = target.offsetTop - headerHeight;
-      
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        }
       });
-    }
-  });
+    }, observerOptions);
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  };
+
+  initScrollReveal();
 });
-
-// Header scroll effect (removed - keeping black background)
-const header = document.querySelector('.header');
-let lastScrollY = 0;
-
-window.addEventListener('scroll', () => {
-  lastScrollY = window.scrollY;
-  // Header stays black at all times
-}, { passive: true });
-
-// Animate scroll indicator
-const scrollIndicator = document.querySelector('.scroll-arrow');
-if (scrollIndicator) {
-  setInterval(() => {
-    const scrolled = window.scrollY;
-    if (scrolled < window.innerHeight * 0.8) {
-      scrollIndicator.style.opacity = '1';
-    } else {
-      scrollIndicator.style.opacity = '0';
-    }
-  }, 100);
-}

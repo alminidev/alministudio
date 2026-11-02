@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALMINI STUDIO by alexandre polettini</title>
+
+  <!-- Fallback instantâneo caso JS esteja desativado -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=./pt/" />
+  </noscript>
+
+  <!-- Roteador de Entrada Inteligente (Vanilla JS) -->
+  <script>
+    (function () {
+      try {
+        var savedLang = localStorage.getItem('almini_lang');
+        if (savedLang === 'en') {
+          window.location.replace('./en/');
+          return;
+        } else if (savedLang === 'pt') {
+          window.location.replace('./pt/');
+          return;
+        }
+
+        // Primeiro acesso: verifica idioma do navegador
+        var browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+        if (browserLang.indexOf('en') === 0) {
+          window.location.replace('./en/');
+        } else {
+          // Padrão obrigatório: pt-BR
+          window.location.replace('./pt/');
+        }
+      } catch (e) {
+        window.location.replace('./pt/');
+      }
+    })();
+  </script>
+
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    a {
+      color: #c2c2c2;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 0.875rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 8px 16px;
+      border-radius: 999px;
+    }
+
+    a:hover {
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ALMINI STUDIO by alexandre polettini</h1>
+  <p>Redirecionando para / Redirecting to ALMINI STUDIO...</p>
+  <p>
+    <a href="./pt/">Versão em Português</a>
+    <a href="./en/">English Version</a>
+  </p>
+</body>
+
+</html>

@@ -47,4 +47,4 @@ almini-studio/
 
 ---
 
-© [ano] Almini Studio. Todos os direitos reservados.
+© 2026 Almini Studio. Todos os direitos reservados.

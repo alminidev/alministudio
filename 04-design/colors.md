@@ -16,7 +16,7 @@ O Almini Studio é estritamente monocromático escuro, derivado do portfólio au
 | `--text-white` | `#ffffff` | `rgb(255, 255, 255)` | Headings monumentais, CTAs ativos | **21:1** (AAA) |
 | `--text-body` | `#e0e0e0` | `rgb(224, 224, 224)` | Texto do manifesto e leitura principal | **15:1** (AAA) |
 | `--text-muted` | `#c2c2c2` | `rgb(194, 194, 194)` | Descrições secundárias e subtítulos | **11:1** (AAA) |
-| `--text-subtle` | `#636363` | `rgb(99, 99, 99)` | Numerais de passos e links inativos | **4.6:1** (AA) |
+| `--text-subtle` | `#8a8a8a` | `rgb(138, 138, 138)` | Numerais de passos, índices e microtextos | **7:1** (AAA) |
 | `--text-num` | `#444444` | `rgb(68, 68, 68)` | Numerais decorativos de fundo | 2.5:1 |
 | `--border-hairline` | `#ffffff1a` | `rgba(255, 255, 255, 0.10)` | Divisões horizontais sutis de seção | — |
 | `--border-visible` | `#ffffff33` | `rgba(255, 255, 255, 0.20)` | Bordas de tags e botões secundários | — |

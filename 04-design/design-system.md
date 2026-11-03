@@ -18,7 +18,7 @@ Este documento é a **fonte única da verdade** para a implementação front-end
 --text-white:            #ffffff;         /* Headings monumentais, CTAs primários ativos */
 --text-body:             #e0e0e0;         /* Leitura do manifesto e sobre o estúdio */
 --text-muted:            #c2c2c2;         /* Descrição do hero, descrições de serviços */
---text-subtle:           #636363;         /* Numerais de serviços, índices de gaveta */
+--text-subtle:           #8a8a8a;         /* Numerais de serviços, índices de gaveta, microtextos (contraste 7:1 AAA) */
 --text-num:              #444444;         /* Numerais gigantes de projetos (01, 02) */
 
 /* BORDAS & LINHAS DE CONTENÇÃO */

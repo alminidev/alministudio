@@ -18,7 +18,7 @@
   --text-white: #ffffff;
   --text-body: #e0e0e0;
   --text-muted: #c2c2c2;
-  --text-subtle: #636363;
+  --text-subtle: #8a8a8a;
   --text-num: #444444;
 
   /* Bordas e Divisões */
@@ -481,6 +481,16 @@ section {
   font-weight: 600;
 }
 
+.manifesto-highlight {
+  font-size: 1.25rem !important;
+  line-height: 1.8;
+  color: var(--text-white) !important;
+  margin-top: 2.25rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border-hairline);
+  font-weight: 400;
+}
+
 /* ==========================================================================
    SECTION HEADERS & SELECTED WORK
    ========================================================================== */
@@ -629,6 +639,8 @@ section {
   border-radius: var(--radius-md);
   overflow: hidden;
   position: relative;
+  cursor: pointer;
+  display: block;
   transition: transform var(--transition-smooth), border-color var(--transition-smooth);
 }
 
@@ -853,10 +865,32 @@ section {
 
 .contact-actions {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  gap: 1rem;
   margin-bottom: 2.5rem;
+}
+
+.contact-email-direct {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.contact-email-direct a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--border-visible);
+  transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
+}
+
+.contact-email-direct a:hover {
+  color: var(--text-white);
+  text-decoration-color: var(--text-white);
 }
 
 .contact-micro {
@@ -1070,7 +1104,7 @@ section {
     font-size: 1.75rem;
   }
   .process-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 2.5rem;
   }
@@ -1143,6 +1177,10 @@ section {
     flex-direction: column;
     width: 100%;
     gap: 0.875rem;
+  }
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
   .btn-primary,
   .btn-secondary {

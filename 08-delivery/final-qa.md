@@ -36,3 +36,4 @@
    - Transições de opacidade e transforms são zerados (`transition: none !important`), respeitando usuários com sensibilidade vestibular.
 3. **Persistência de Idioma:**
    - Alternar para Inglês grava a chave `almini_lang = 'en'` no `localStorage`, garantindo que visitas subsequentes à raiz respeitem a preferência do usuário.
+

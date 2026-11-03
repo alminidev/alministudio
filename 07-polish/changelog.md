@@ -62,3 +62,4 @@ Com base nas auditorias de `06-audit/` e na matriz de prioridades `06-audit/prio
    - Instagram -> `https://instagram.com`
 3. **Internacionalização:**
    - Simetria total entre `pt/index.html` e `en/index.html`.
+

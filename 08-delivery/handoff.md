@@ -98,3 +98,4 @@ git commit -m "feat: sua mensagem de alteração"
 git push origin main
 ```
 Caso utilize serviços como **Vercel**, **Cloudflare Pages** ou **Netlify**, basta conectar o repositório — sem comandos de build necessários (`Build Command: [vazio]`, `Publish directory: .` ou `05-build`).
+

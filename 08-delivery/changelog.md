@@ -42,3 +42,4 @@ Todas as alterações notáveis deste projeto estão registradas neste documento
 - Gavetas sanfona (accordion) interativas de serviços com estado `aria-expanded`.
 - Grid de processo metodológico em 4 etapas lineares numeradas.
 - Metadados completos de SEO, Open Graph e Schema.org.
+

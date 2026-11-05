@@ -4,6 +4,14 @@ Todas as alterações notáveis deste projeto estão registradas neste documento
 
 ---
 
+## 2026-11-05 — Remoção de Chaves { } no Microtexto de Contato
+**Pedido por:** Usuário  
+**O que mudou:**  
+- Removidas as chaves `{ }` do microtexto de apoio da seção de contato, mantendo a leitura limpa: `"Conte um pouco sobre sua ideia. Vamos encontrar o melhor caminho para desenvolvê-la."` (PT) e `"Tell us a bit about your idea. We'll find the best path to build it."` (EN).  
+**Arquivos alterados:** `pt/index.html`, `en/index.html`, `05-build/pt/index.html`, `05-build/en/index.html`.
+
+---
+
 ## 2026-11-05 — Atualização dos Textos e Posicionamento dos Serviços
 **Pedido por:** Usuário  
 **O que mudou:**  

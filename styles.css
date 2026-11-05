@@ -865,32 +865,8 @@ section {
 
 .contact-actions {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 1rem;
   margin-bottom: 2.5rem;
-}
-
-.contact-email-direct {
-  font-family: var(--font-mono);
-  font-size: 0.8125rem;
-  letter-spacing: 0.05em;
-  color: var(--text-muted);
-  text-align: center;
-}
-
-.contact-email-direct a {
-  color: var(--text-muted);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-color: var(--border-visible);
-  transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
-}
-
-.contact-email-direct a:hover {
-  color: var(--text-white);
-  text-decoration-color: var(--text-white);
 }
 
 .contact-micro {

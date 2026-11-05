@@ -4,6 +4,16 @@ Todas as alterações notáveis deste projeto estão registradas neste documento
 
 ---
 
+## 2026-11-05 — Simplificação do CTA de Contato e Remoção de E-mail Textual
+**Pedido por:** Usuário  
+**O que mudou:**  
+- Botão de contato na seção `#contact` simplificado para `{ VAMOS INICIAR UM PROJETO? }` em Português e `{ LET'S START A PROJECT? }` em Inglês.
+- Removida a linha de e-mail auxiliar em texto puro (`ou envie diretamente para hello@alexandrepolettini.com` / `or reach out directly at hello@alexandrepolettini.com`).
+- Limpeza dos seletores `.contact-email-direct` em `styles.css`.  
+**Arquivos alterados:** `pt/index.html`, `en/index.html`, `styles.css`, `05-build/pt/index.html`, `05-build/en/index.html`, `05-build/styles.css`.
+
+---
+
 ## [Versão 1.1.0] — 2026-11-02 (Release de Produção & Polish /ship)
 
 ### Adicionado

@@ -4,6 +4,19 @@ Todas as alterações notáveis deste projeto estão registradas neste documento
 
 ---
 
+## 2026-11-05 — Atualização dos Textos e Posicionamento dos Serviços
+**Pedido por:** Usuário  
+**O que mudou:**  
+- Atualizados os 4 cards da seção de serviços (`#services`) com a nova matriz de ofertas e proposta de valor do estúdio:
+  1. `01 / BRAND ECOSYSTEM | A SOLUÇÃO COMPLETA` — Ecossistema digital de ponta a ponta unindo identidade visual, verbal e web performance.
+  2. `02 / BRAND IDENTITY & ART DIRECTION | POSICIONAMENTO VISUAL` — Linguagem estética, brand books e direção fotográfica com personalidade própria.
+  3. `03 / DIGITAL EXPERIENCE & WEB DESIGN | SITES E INTERFACES DE ALTO PADRÃO` — Ambientes imersivos, navegação fluida e foco na jornada do usuário.
+  4. `04 / HIGH-CONVERSION LANDING PAGES | PÁGINAS DE ALTA PERFORMANCE` — Páginas estratégicas para lançamentos, campanhas e tráfego pago.
+- Textos bilíngues sincronizados em português e inglês.  
+**Arquivos alterados:** `pt/index.html`, `en/index.html`, `05-build/pt/index.html`, `05-build/en/index.html`.
+
+---
+
 ## 2026-11-05 — Simplificação do CTA de Contato e Remoção de E-mail Textual
 **Pedido por:** Usuário  
 **O que mudou:**  

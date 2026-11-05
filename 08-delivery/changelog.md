@@ -4,6 +4,14 @@ Todas as alterações notáveis deste projeto estão registradas neste documento
 
 ---
 
+## 2026-11-05 — Remoção de Chaves { } no Microtexto do Hero
+**Pedido por:** Usuário  
+**O que mudou:**  
+- Removidas as chaves `{ }` do microtexto editorial do Hero, exibindo: `"Design independente. Pensamento criativo. Experiências digitais."` (PT) e `"Independent design. Creative thinking. Digital experiences."` (EN).  
+**Arquivos alterados:** `pt/index.html`, `en/index.html`, `05-build/pt/index.html`, `05-build/en/index.html`.
+
+---
+
 ## 2026-11-05 — Remoção de Chaves { } no Microtexto de Contato
 **Pedido por:** Usuário  
 **O que mudou:**  

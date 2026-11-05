@@ -4,6 +4,14 @@ Todas as alterações notáveis deste projeto estão registradas neste documento
 
 ---
 
+## 2026-11-05 — Remoção das Linhas Divisórias de Seção
+**Pedido por:** Usuário  
+**O que mudou:**  
+- Removidas as linhas horizontais que dividiam cada seção da página (`section { border-bottom }` e `.footer { border-top }`), proporcionando uma transição visual contínua, fluida e sofisticada entre os blocos de conteúdo através do respiro do espaço negativo.  
+**Arquivos alterados:** `styles.css`, `404.html`, `05-build/styles.css`, `05-build/404.html`.
+
+---
+
 ## 2026-11-05 — Simplificação do CTA de Contato e Remoção de E-mail Textual
 **Pedido por:** Usuário  
 **O que mudou:**  

@@ -4,6 +4,16 @@ Todas as alterações notáveis deste projeto estão registradas neste documento
 
 ---
 
+## 2026-11-05 — Substituição do Case 02: Mano's Car por IKEWAI
+**Pedido por:** Usuário  
+**O que mudou:**  
+- Substituído o Case 02 de portfólio (anteriormente Mano's Car) pelo projeto **IKEWAI** (empresa focada em coaching, investimentos em negócios e projetos inovadores).
+- Incorporada a imagem real de manual e aplicações de marca (`assets/ikewai-brand-identity.jpg`).
+- Atualizados os textos em português e inglês com foco nos pilares da marca: *Vitória, coragem e confiança*.  
+**Arquivos alterados:** `pt/index.html`, `en/index.html`, `README.md`, `assets/ikewai-brand-identity.jpg`, `05-build/pt/index.html`, `05-build/en/index.html`, `05-build/README.md`, `05-build/assets/ikewai-brand-identity.jpg`.
+
+---
+
 ## 2026-11-05 — Remoção de Chaves { } no Microtexto do Hero
 **Pedido por:** Usuário  
 **O que mudou:**  

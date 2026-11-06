@@ -35,7 +35,7 @@ alministudio/
 │   └── index.html
 ├── en/                   # Versão em Inglês (en-US)
 │   └── index.html
-├── assets/               # Imagens de projetos reais (NIX, Mano's Car)
+├── assets/               # Imagens de projetos reais (NIX, Ikewai)
 ├── robots.txt            # Diretivas de rastreamento e indexação
 ├── sitemap.xml           # Mapa do site multilíngue
 ├── 00-brief/             # Briefing, escopo, stack lock e manifesto de ativos

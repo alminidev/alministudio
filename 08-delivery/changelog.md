@@ -4,6 +4,14 @@ Todas as alterações notáveis deste projeto estão registradas neste documento
 
 ---
 
+## 2026-11-05 — Link Externo Oficial para o Projeto NIX
+**Pedido por:** Usuário  
+**O que mudou:**  
+- O botão `{ VER PROJETO } →` (e `{ VIEW PROJECT } →` em EN) e o container de imagem do projeto NIX agora direcionam para o site oficial `https://www.nix3d.com.br` com abertura em nova aba (`target="_blank" rel="noopener noreferrer"`).  
+**Arquivos alterados:** `pt/index.html`, `en/index.html`, `05-build/pt/index.html`, `05-build/en/index.html`.
+
+---
+
 ## 2026-11-05 — Exibição Panorâmica Completa Sem Cortes no Case NIX
 **Pedido por:** Usuário  
 **O que mudou:**  

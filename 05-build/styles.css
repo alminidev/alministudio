@@ -649,6 +649,17 @@ section {
   border-color: var(--border-visible);
 }
 
+.project-visual-contain {
+  min-height: auto !important;
+}
+
+.project-visual-contain img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
 .visual-canvas {
   width: 100%;
   height: 100%;

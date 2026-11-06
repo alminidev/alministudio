@@ -4,6 +4,15 @@ Todas as alterações notáveis deste projeto estão registradas neste documento
 
 ---
 
+## 2026-11-05 — Exibição Panorâmica Completa Sem Cortes no Case NIX
+**Pedido por:** Usuário  
+**O que mudou:**  
+- Implementada classe `.project-visual-contain` no card do projeto 01 (NIX), removendo o corte lateral/vertical provocado por `object-fit: cover` e `min-height: 420px`.
+- A imagem agora é renderizada 100% íntegra (`width: 100%; height: auto; object-fit: contain`), preservando todo o lineup de impressoras 3D, dry boxes e cabeçalho sem qualquer corte.  
+**Arquivos alterados:** `styles.css`, `pt/index.html`, `en/index.html`, `05-build/styles.css`, `05-build/pt/index.html`, `05-build/en/index.html`.
+
+---
+
 ## 2026-11-05 — Atualização da Imagem do Case NIX
 **Pedido por:** Usuário  
 **O que mudou:**  

@@ -4,6 +4,14 @@ Todas as alterações notáveis deste projeto estão registradas neste documento
 
 ---
 
+## 2026-11-05 — Atualização da Imagem do Case NIX
+**Pedido por:** Usuário  
+**O que mudou:**  
+- Atualizada a imagem visual do projeto 01 (NIX) para a nova composição panorâmica de equipamentos de impressão 3D e dry boxes (`assets/Evolução do Setup de Impressão 3D.png`).  
+**Arquivos alterados:** `pt/index.html`, `en/index.html`, `assets/Evolução do Setup de Impressão 3D.png`, `05-build/pt/index.html`, `05-build/en/index.html`, `05-build/assets/Evolução do Setup de Impressão 3D.png`.
+
+---
+
 ## 2026-11-05 — Substituição do Case 02: Mano's Car por IKEWAI
 **Pedido por:** Usuário  
 **O que mudou:**  

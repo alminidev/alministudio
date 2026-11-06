@@ -4,6 +4,18 @@ Todas as alterações notáveis deste projeto estão registradas neste documento
 
 ---
 
+## 2026-11-06 — Navegação Horizontal na Seção WORKS (Desktop Pinned & Mobile Touch Swipe)
+**Pedido por:** Usuário  
+**O que mudou:**  
+- Implementada navegação horizontal na seção de projetos (`#work`), inspirada no padrão técnico do Amplify:
+  - **Desktop:** Navegação horizontal pinned controlada pelo scroll vertical do mouse. A seção fixa no topo da tela, os projetos transitam progressivamente da direita para a esquerda em mapeamento linear 1:1 com aceleração por GPU (`translate3d`), liberando a rolagem vertical para a seção seguinte (`#services`) ao atingir o último projeto, e funcionando no sentido inverso ao subir a página.
+  - **Mobile:** Navegação horizontal nativa por gesto de toque (swipe) com `scroll-snap-type: x mandatory`, touch-action balanceada (`pan-x pan-y`), cards com largura de 85vw permitindo o peek visual do próximo card, e barras de rolagem ocultas, sem conflito com o scroll vertical da página.
+  - **Acessibilidade:** Suporte total a `prefers-reduced-motion` e recálculo dinâmico de métricas em redimensionamento e rotação de tela.
+  - **Preservação:** Identidade visual, tipografia, cores, imagens, textos e todas as demais seções mantidas 100% intactas.  
+**Arquivos alterados:** `styles.css`, `script.js`, `pt/index.html`, `en/index.html`, `05-build/styles.css`, `05-build/script.js`, `05-build/pt/index.html`, `05-build/en/index.html`.
+
+---
+
 ## 2026-11-05 — Link Externo Oficial para o Projeto NIX
 **Pedido por:** Usuário  
 **O que mudou:**  

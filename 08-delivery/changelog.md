@@ -1,3 +1,12 @@
+## [2026-11-06] � Remove image borders and show images fully
+
+- Removed border/frame from .project-visual inside .project-card (desktop and mobile)
+- Changed object-fit from cover to contain so images display complete without cropping
+- Removed fixed min-height/max-height constraints so images use natural dimensions
+- Removed inline style with object-fit: cover from IKEWAI <img> tag (pt/index.html and en/index.html)
+- Applied order-radius directly to <img> to preserve subtle rounding
+- Synced to 05-build/ � fidelity check: 0 violations
+
 # Histórico de Versões & Lançamento (Changelog) — ALMINI STUDIO
 
 Todas as alterações notáveis deste projeto estão registradas neste documento.
@@ -128,4 +137,5 @@ Todas as alterações notáveis deste projeto estão registradas neste documento
 - Gavetas sanfona (accordion) interativas de serviços com estado `aria-expanded`.
 - Grid de processo metodológico em 4 etapas lineares numeradas.
 - Metadados completos de SEO, Open Graph e Schema.org.
+
 

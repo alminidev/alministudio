@@ -1390,6 +1390,11 @@ section {
     font-size: 0.875rem;
     min-height: 44px;
   }
+  .process-action-wrap .btn-secondary,
+  .contact-actions .btn-primary {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+  }
   .project-link-btn {
     min-height: 44px;
     display: inline-flex;

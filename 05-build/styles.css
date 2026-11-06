@@ -740,20 +740,23 @@ section {
 
   .project-card .project-visual {
     width: 100%;
-    min-height: auto;
-    max-height: none;
-    border: none;
-    border-radius: 0;
-    background: transparent;
-    overflow: visible;
+    min-height: auto !important;
+    max-height: none !important;
+    height: auto !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    overflow: visible !important;
   }
 
   .project-card .project-visual img {
-    width: 100%;
-    height: auto;
-    max-height: none;
-    object-fit: contain;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center !important;
     border-radius: var(--radius-sm);
+    display: block;
   }
 
   .project-card .project-visual.project-visual-contain img {
